@@ -1,7 +1,7 @@
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.action_chains import ActionChains
+#from selenium.webdriver.common.action_chains import ActionChains
 
 class AJIOSite:
     def __init__(self, driver):
@@ -19,8 +19,7 @@ class AJIOSite:
         # driver.find_element(By.NAME, "otp").click()
         time.sleep(20)
         self.driver.find_element(By.XPATH, "//input[@type='submit']").click()
-        expected = self.driver.find_elements(By.XPATH, "//*[contains(text(), 'WOMEN')]").text
-        print(expected)
+        
 
 class AJIOLogin(AJIOSite):
     def __init__(self, driver):
