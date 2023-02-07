@@ -1,7 +1,7 @@
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-#from selenium.webdriver.common.action_chains import ActionChains
+
 
 class AJIOSite:
     def __init__(self, driver):
@@ -16,9 +16,11 @@ class AJIOSite:
         self.driver.find_element(By.XPATH, "//input[@class='login-btn']").click()
         self.driver.find_element(By.XPATH, "//input[@type='button']").click()
         self.driver.find_element(By.ID, "pwdInput").send_keys(password)
-        # driver.find_element(By.NAME, "otp").click()
+
         time.sleep(20)
         self.driver.find_element(By.XPATH, "//input[@type='submit']").click()
+
+
         
 
 class AJIOLogin(AJIOSite):

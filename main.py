@@ -14,5 +14,7 @@ if __name__ == '__main__':
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+#from selenium.webdriver.common.action_chains import ActionChains
+# driver.find_element(By.NAME, "otp").click()
 #expected = self.driver.find_elements(By.XPATH, "//*[contains(text(), 'WOMEN')]").text
         #print(expected)
