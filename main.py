@@ -18,3 +18,5 @@ if __name__ == '__main__':
 # driver.find_element(By.NAME, "otp").click()
 #expected = self.driver.find_elements(By.XPATH, "//*[contains(text(), 'WOMEN')]").text
         #print(expected)
+
+# import selenium_to_Oops_in_python

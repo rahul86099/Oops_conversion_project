@@ -2,7 +2,6 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-
 class AJIOSite:
     def __init__(self, driver):
         self.driver = driver
@@ -19,9 +18,6 @@ class AJIOSite:
 
         time.sleep(20)
         self.driver.find_element(By.XPATH, "//input[@type='submit']").click()
-
-
-        
 
 class AJIOLogin(AJIOSite):
     def __init__(self, driver):
@@ -48,4 +44,3 @@ while True:
         ajio_login.ele()
     elif choice ==3:
         quit()
-
